@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "homepage": "https://mahmoudaboalwafa1.github.io/LinkedIn_clone",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
@@ -32,6 +35,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "vite": "^4.1.0"
   }
 }
