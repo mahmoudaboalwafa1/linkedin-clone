@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mahmoudaboalwafa1.github.io/LinkedIn_clone",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
@@ -11,7 +12,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "homepage": "https://mahmoudaboalwafa1.github.io/LinkedIn_clone",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Home from "./pages/Home";
 import RequireAuth from "./components/RequireAuth";
@@ -8,7 +8,7 @@ import Join from "./components/Login/Join";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/join" element={<Join />} />
@@ -22,7 +22,7 @@ const App = () => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
