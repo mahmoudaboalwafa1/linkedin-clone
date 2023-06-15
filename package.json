@@ -1,5 +1,4 @@
 {
-  "homepage": "http://mahmoudaboalwafa1.github.io/linkedin-clone",
   "name": "linkedin_clone",
   "private": true,
   "version": "0.0.0",
@@ -7,8 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
