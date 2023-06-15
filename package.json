@@ -1,5 +1,6 @@
 {
-  "name": "linkedin-clone",
+  "homepage": "http://mahmoudaboalwafa1.github.io/linkedin_clone",
+  "name": "linkedin_clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +13,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "homepage": "http://mahmoudaboalwafa1.github.io/linkedin_clone",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "firebase": "^9.22.2",
