@@ -10,14 +10,4 @@ const DataUser = (user, stateLogin, stateHome) => {
   };
 };
 
-const GET_DOWNLOAD = "GET_DOWNLOAD";
-
-// Set Download
-const GetDownload = (payload) => {
-  return {
-    type: GET_DOWNLOAD,
-    download: payload,
-  };
-};
-
-export { DataUser, DATA_USER, GET_DOWNLOAD, GetDownload };
+export { DataUser, DATA_USER };

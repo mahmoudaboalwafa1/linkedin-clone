@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged } from "firebase/auth";
 
 const RequireAuth = ({ children }) => {
-  const statusHome = useSelector((state) => state.userReducer.statusHOme);
+  const statusHome = useSelector((state) => state.statusHOme);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(() => {

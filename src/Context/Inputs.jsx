@@ -4,7 +4,7 @@ const InputsApi = createContext();
 
 const InputsProvider = ({ children }) => {
   const [InputsValue, setInputsValue] = useState({
-    name: "user",
+    name: "",
     email: "",
     password: "",
     confirm: "",

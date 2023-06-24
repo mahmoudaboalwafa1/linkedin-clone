@@ -29,9 +29,6 @@ const IconsHeader = () => {
       setUser(userInfo);
 
       if (userInfo) {
-        updateProfile(userInfo, {
-          displayName: InputsValue.name,
-        });
         if (InputsValue.imgUpload) {
           const storageRef = ref(storage, InputsValue.imgUpload.name);
           const uploadRef = uploadBytesResumable(

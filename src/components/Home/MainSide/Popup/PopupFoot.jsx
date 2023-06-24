@@ -1,21 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import * as PopupFootStyle from "./PopupPoststyle";
 import { uploadData } from "../../../../data/Home";
-import { auth, db, storage } from "../../../../redux/firebase";
+import { db, storage } from "../../../../redux/firebase";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
-import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const PopupFoot = ({ setInfoPopup, showBtnPost, infoPopup, handlePopup }) => {
   const { ContainerFoot, UploadPost, ContainerIcon } = PopupFootStyle;
   const { IconUpload, IconPhoto, BtnPost, TextAny } = PopupFootStyle;
   const time = Timestamp.now().toDate().toLocaleDateString();
-  const dispatch = useDispatch();
-  const [dataUser, setDataUser] = useState(null);
-  onAuthStateChanged(auth, (user) => {
-    setDataUser(user);
-  });
+  const dataUser = useSelector((state) => state.data);
 
   const { inputText, mediaShowNow, areaShow } = infoPopup;
   const handleBtnPost = () => {

@@ -17,13 +17,7 @@ const ContainerNav = styled.div`
     font-size: 0.8rem;
   }
 `;
-const Sign = styled.button`
-  padding: 6px 15px;
-  color: var(--blue-color);
-  border: solid 1px var(--blue-color);
-  border-radius: 20px;
-  font-size: 0.8rem;
-`;
+
 // end Navbar //
 
 // start Landing //

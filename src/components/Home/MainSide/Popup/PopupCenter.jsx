@@ -8,9 +8,9 @@ const PopupCenter = (props) => {
   // style
   const { InfoPopup, ImgUser, NameUser, WriteArea } = PopupCenterStyle;
   const { ContainerImg, AreaImage, AreaVideo, Video } = PopupCenterStyle;
-  const dataUser = useSelector((state) => state.userReducer.data);
-
+  const dataUser = useSelector((state) => state.data);
   const { setInfoPopup, infoPopup, inputText, areaShow, mediaShowNow } = props;
+
   return (
     <>
       <InfoPopup>

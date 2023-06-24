@@ -137,7 +137,7 @@ const MainLog = ({ dataComponent }) => {
               ""
             )}
             <div>
-              <Button onClick={handleSubmit}>Submit</Button>
+              <Button onClick={() => handleSubmit()}>Submit</Button>
             </div>
           </Form>
           {InputsValue.message && (

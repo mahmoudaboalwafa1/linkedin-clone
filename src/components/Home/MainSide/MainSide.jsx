@@ -9,7 +9,7 @@ import { useState } from "react";
 import ContentArticles from "./ContentArticles";
 
 const MainSide = () => {
-  const dataUser = useSelector((state) => state.userReducer.data);
+  const dataUser = useSelector((state) => state.data);
   const [popUp, setPopup] = useState(false);
   const [overlay, setOverlay] = useState("");
 

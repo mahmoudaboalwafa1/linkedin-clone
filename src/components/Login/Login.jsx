@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
 import { GoogleProvider, auth } from "../../redux/firebase";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginHero, LogoGoogle } from "../../images/index";
 import { DataUser } from "../../redux/actions";
@@ -11,7 +11,7 @@ import Navbar from "../Header/Navbar";
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const statusLogin = useSelector((state) => state.userReducer.statusLogin);
+  const statusLogin = useSelector((state) => state.statusLogin);
   const signWithGoogle = () => {
     signInWithPopup(auth, GoogleProvider)
       .then((user) => {
@@ -39,7 +39,7 @@ const Login = () => {
           <Hero>welcome to your professional community</Hero>
         </Container>
         <ContainerLand>
-          <Google href="#" onClick={signWithGoogle}>
+          <Google href="#" onClick={() => signWithGoogle()}>
             <img src={LogoGoogle} />
             <span>sign in with google</span>
           </Google>
