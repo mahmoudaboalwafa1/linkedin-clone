@@ -73,6 +73,7 @@ const Google = styled.a`
 
   @media (max-width: 768px) {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   & > img {

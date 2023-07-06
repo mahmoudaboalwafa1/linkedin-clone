@@ -56,8 +56,7 @@ export const ContainerIcon = styled.div`
   align-items: center;
   justify-content: center;
 
-  :hover,
-  :first-of-type {
+  &:hover {
     background-color: var(--bg-hover-gray);
   }
 
@@ -68,8 +67,8 @@ export const ContainerIcon = styled.div`
   :nth-child(2)::after {
     content: "";
     position: absolute;
-    right: -5px;
-    top: 10px;
+    right: -20px;
+    top: 2px;
     background-color: var(--bg-border);
     width: 1px;
     height: 65%;

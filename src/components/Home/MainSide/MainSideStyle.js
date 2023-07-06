@@ -35,7 +35,7 @@ const BtnPost = styled.div`
   font-size: 14px;
   padding-left: 10px;
 
-  :hover {
+  &:hover {
     background-color: var(--bg-hover-gray);
   }
 `;
@@ -58,8 +58,8 @@ const CateItem = styled.li`
   cursor: pointer;
   width: 100%;
   padding: 10px;
-  :hover,
-  :last-of-type {
+
+  &:hover {
     background-color: var(--bg-hover-gray);
   }
 `;
@@ -186,10 +186,6 @@ const Put = styled.div`
   padding: 10px;
   cursor: pointer;
   margin: 0 10px;
-
-  :hover {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
 
   li {
     color: #00000099;
