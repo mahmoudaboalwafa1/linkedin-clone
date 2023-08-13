@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
+import {
+  onAuthStateChanged,
+  signInWithPopup,
+  updateProfile,
+} from "firebase/auth";
 import { GoogleProvider, auth } from "../../redux/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
